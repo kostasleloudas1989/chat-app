@@ -1,0 +1,17 @@
+{
+  "name": "chat-app-server",
+  "version": "1.0.0",
+  "description": "this is a websocket server for the chat application",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "nodemon index.mjs"
+  },
+  "author": "kostas leloudas",
+  "license": "ISC",
+  "dependencies": {
+    "ws": "^8.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.20"
+  }
+}

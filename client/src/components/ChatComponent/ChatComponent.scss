@@ -1,0 +1,68 @@
+.chat {
+    height: 33em;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    border: 0.3em;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-bottom: solid;
+    border-bottom-width: 0.1em;
+    border-bottom-color: rgb(145, 158, 171);
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.chat-container {
+    margin-top: 1em;
+    height: 32em;
+    display: block;
+    overflow-y: auto;
+    background-color: rgb(255, 255, 255);
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.message-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.message-box {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(200, 250, 205);
+    padding: 1em;
+    margin: 1em;
+    margin-bottom: 1.5em;
+    border-radius: 1em;
+    align-items: flex-end;
+    max-width: 30em;
+    word-break: break-all;
+    box-shadow: 0.1em 0.3em rgb(199 226 202);
+    opacity: 0%;
+    font-size:1.2em;
+}
+
+.animated {
+    opacity: 100%;
+	animation: append-animate .3s linear;
+}
+
+.msg-sender {
+    margin-right: 1.5em;
+    margin-bottom: -0.5em;
+    color: rgb(123, 134, 145);    
+}
+
+@keyframes append-animate {
+	from {
+		transform: scale(0);
+		opacity: 0;
+	}
+	to {
+		transform: scale(1);
+		opacity: 1;	
+	}
+}

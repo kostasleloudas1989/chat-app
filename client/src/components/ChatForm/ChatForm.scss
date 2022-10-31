@@ -1,0 +1,85 @@
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border: 0.3em;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-top: none;
+    border-bottom: none;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+input {
+    padding: 0.5em;
+    margin: 0.5em;
+    padding: 1em;
+}
+
+.user-input-container {
+    border-right: solid;
+    border-right-width: 0.1em;
+    border-right-color: rgb(145, 158, 171);
+}
+
+.user-input {
+    margin-top: 1em;
+}
+
+.image-button {
+    width: 2em;
+    height: 2em;
+    opacity: 50%;
+    margin-top: 1.5em;
+    margin-left: 2em;
+}
+
+.send-button {
+    margin-right: 1.5em;
+}
+
+img:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.message-input, .user-input {
+    border: none;
+    background: transparent;
+    font-size:1em;
+}
+
+.message-input {
+    width: 88em;
+    height: 2em;
+}
+
+.message-input:focus, .user-input:focus {
+    outline: none;
+}
+
+.user-input:focus {
+    border: none;
+}
+
+.message-input:focus::placeholder {
+    color: transparent;
+}
+
+.chat-bar {
+    display: flex;
+    flex-direction: row;
+}
+
+.error-field {
+    border: solid;
+    border-width: 0.1em;
+    border-radius: 0.5em;
+    border-color: rgb(255, 94, 94);
+}
+
+.emoji-picker-container {
+    margin-top: -32em;
+    margin-left: -4em;
+}
